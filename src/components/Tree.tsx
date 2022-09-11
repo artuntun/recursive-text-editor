@@ -1,3 +1,4 @@
+import React from "react";
 import { uuidv4 } from "../utilities/randomGeneration";
 
 export class Tree {
@@ -5,6 +6,7 @@ export class Tree {
   children: Tree[];
   parent?: Tree;
   value: string;
+  ref: React.RefObject<HTMLSpanElement>;
 
   constructor({
     children = [],
@@ -24,6 +26,7 @@ export class Tree {
     this.children = children;
     this.parent = parent;
     this.value = value;
+    this.ref = React.createRef();
   }
   static copyTree(tree: Tree, id = tree.id, parent?: Tree) {
     const newTree = new Tree({ children: [], value: tree.value, parent, id });

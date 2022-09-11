@@ -1,4 +1,4 @@
-import { uuidv4 } from "../utils";
+import { uuidv4 } from "../utilities/randomGeneration";
 import React from "react";
 
 export default class TreeNode {

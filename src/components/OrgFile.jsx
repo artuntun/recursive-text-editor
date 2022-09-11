@@ -1,7 +1,7 @@
 /* tslint:disable */
 
 import React from "react";
-import TreeNode from "./Tree";
+import TreeNode from "./TreeDep";
 import { ResizableTextArea } from "./ResizableTextArea";
 // import TextareaAutosize from 'react-textarea-autosize';
 import {
@@ -10,8 +10,8 @@ import {
   deleteNode,
   setNodeProperty,
   fetchNodeParent,
-} from "./Tree";
-import { randomText } from "../utils";
+} from "./TreeDep";
+import { randomText } from "../utilities/randomGeneration";
 
 export default class OrgFile extends React.Component {
   constructor(props) {
@@ -107,6 +107,7 @@ export default class OrgFile extends React.Component {
     // var enterOnly = event.keyCode == 'Enter' && !event.shiftKey;
     const newRoot = this.state.root;
     if (shiftEnter) {
+      debugger;
       // if (event.key === "Enter") {
       const currentNode = fetchNode(event.target.id, this.state.root);
       setNodeProperty(currentNode.id, newRoot, "value", event.target.value);

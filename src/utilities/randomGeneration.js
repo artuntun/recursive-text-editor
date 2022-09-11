@@ -12,14 +12,16 @@ export const randomChoice = (arr) => {
 
 export function randomText() {
   var textChoices = [
-    "Pues como no me salia el codigo, decidi tirar el ordenador por la ventana",
-    "Estaba yo caminando por la calle..",
-    "Nunca mas voy a correr detras del autobus",
-    "Lisa necesita un aparato",
-    "No soy el senior Mongomery, ya se lo dicho muchas veces",
-    "Un tonto nunca se recupera del exito",
-    "Basta ya de adorar a un mono. Hemos perdido la cabeza?",
-    "Cuanto me costaria ese ninio?",
+    "Lorem Ipsum is simply dummy text of the printing and ",
+    "typesetting industry. Lorem Ipsum has been the industry's ",
+    "standard dummy text ever since the 1500s, when an unknown ",
+    "printer took a galley of type and scrambled it to make a type ",
+    "specimen book. It has survived not only five centuries, but ",
+    "also the leap into electronic typesetting, remaining essentially ",
+    "unchanged. It was popularised in the 1960s with the release of ",
+    "Letraset sheets containing Lorem Ipsum passages, and more recently ",
+    "with desktop publishing software like Aldus PageMaker including versions ",
+    "of Lorem Ipsum.",
   ];
   return randomChoice(textChoices);
 }
