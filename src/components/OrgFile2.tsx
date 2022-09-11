@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./OrgFile2.module.css";
-import { Tree, findRoot, fetchNode, findUpperSibling } from "./Tree";
+import { Tree, findRoot, fetchNode, findUpperSibling } from "../utilities/Tree";
 import { uuidv4 } from "../utilities/randomGeneration";
 
 interface OrgFile2Props {

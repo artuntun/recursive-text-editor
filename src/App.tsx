@@ -1,7 +1,6 @@
 import { Wrapper } from "./components/Wrapper";
 import { OrgFile2 } from "./components/OrgFile2";
-import OrgFile from "./components/OrgFile";
-import { Tree } from "./components/Tree";
+import { Tree } from "./utilities/Tree";
 import { randomText } from "./utilities/randomGeneration";
 import React from "react";
 
