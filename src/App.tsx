@@ -23,7 +23,7 @@ function App() {
   const [root, setRoot] = React.useState(tree);
   return (
     <Wrapper>
-      <h1>Infinite Text Editor</h1>
+      <h1>Recursive Text Editor</h1>
       <RecursiveTextEditor tree={root} setRoot={setRoot} />
     </Wrapper>
   );

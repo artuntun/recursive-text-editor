@@ -1,6 +1,9 @@
-# Cortext editor
+## Recursive Text Editor
+
+This is a text editor akin to the ones used by Roam Research, Logseq, Athens..
+
+![](assets/recursive_editor.gif)
+
 ## TODOs
-- [ ] Move cursor to right position when clicking on text block
-- [ ] Fix the size of the textarea to fill the whole width
-- [ ] textResizbleArea wrong height when clicked on
-- [ ] Allow Markdown syntax inside of textArea
+- [ ] allow bullet point deletion
+- [ ] solve jerky new node creation and focus
