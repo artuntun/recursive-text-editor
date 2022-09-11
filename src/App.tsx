@@ -1,7 +1,7 @@
-import { Wrapper } from "./components/Wrapper";
-import { OrgFile2 } from "./components/OrgFile2";
 import { Tree } from "./utilities/Tree";
 import { randomText } from "./utilities/randomGeneration";
+import { Wrapper } from "./components/Wrapper";
+import { RecursiveTextEditor } from "./components/RecursiveTextEditor";
 import React from "react";
 
 const subchildren = [
@@ -24,7 +24,7 @@ function App() {
   return (
     <Wrapper>
       <h1>Infinite Text Editor</h1>
-      <OrgFile2 tree={root} setRoot={setRoot} />
+      <RecursiveTextEditor tree={root} setRoot={setRoot} />
     </Wrapper>
   );
 }

@@ -1,14 +1,17 @@
 import React from "react";
-import styles from "./OrgFile2.module.css";
+import styles from "./RecursiveTextEditor.module.css";
 import { Tree, findRoot, fetchNode, findUpperSibling } from "../utilities/Tree";
 import { uuidv4 } from "../utilities/randomGeneration";
 
-interface OrgFile2Props {
+interface RecursiveTextEditorProps {
   tree: Tree;
   setRoot: (newTree: Tree) => void;
 }
 
-export const OrgFile2: React.FC<OrgFile2Props> = ({ tree, setRoot }) => {
+export const RecursiveTextEditor: React.FC<RecursiveTextEditorProps> = ({
+  tree,
+  setRoot,
+}) => {
   const [leaf, setLeaf] = React.useState(tree);
   const [activeCell, setActiveCell] = React.useState<Tree>(tree);
   const [isChildrenVisible, setIsChildrenVisible] = React.useState(true);
@@ -107,7 +110,11 @@ export const OrgFile2: React.FC<OrgFile2Props> = ({ tree, setRoot }) => {
       </li>
       {isChildrenVisible &&
         leaf.children.map((child) => (
-          <OrgFile2 key={`${child.id}`} tree={child} setRoot={setRoot} />
+          <RecursiveTextEditor
+            key={`${child.id}`}
+            tree={child}
+            setRoot={setRoot}
+          />
         ))}
     </ul>
   );
